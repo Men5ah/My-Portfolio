@@ -1,33 +1,57 @@
-body{
+.hidden{
+    border-style: solid;
+    border-color: red;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5s ease;
+  }
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E0E0CE; /* Primary background color */
+    color: #000000; /* Primary text color */
+    transition: background-color 5s ease;
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 300px;
+    margin: 10px;
 }
-button{
-    /* margin-top: 10px; */
+
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+button {
     width: 100px;
     height: 30px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(108, 92, 92, 0.203);
-    color: rgb(0, 0, 0);
+    background-color: #AD343E; /* Button background color */
+    color: #E0E0CE; /* Button text color */
     cursor: pointer;
     font-size: 10pt;
     transition: background-color 1s ease, height 1s ease, width 1s ease, font-size 1s ease;
 }
 
-button:hover{
-    background-color: rgba(202, 113, 23, 0.998);
+button:hover {
+    background-color: #F2AF29; /* Button hover background color */
     width: 150px;
     height: 45px;
     font-size: 15pt;
 }
-a{
+
+a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #AD343E; /* Link color */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F2AF29; /* Link hover color */
 }
